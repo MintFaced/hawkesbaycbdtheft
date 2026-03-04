@@ -1,0 +1,29 @@
+# Source: NZ Police policedata.nz (Recorded Crime Victims Statistics)
+# Area unit classification: Statistics NZ meshblock area units
+# Data period: 12 months to October 2025
+# Note: Raw incident counts derived from per-1,000 rates published by crimestats.co.nz / safesuburbs.co.nz
+# which aggregate official NZ Police monthly data releases.
+# CBD business counts sourced from respective Business Improvement District associations.
+# To download raw monthly data directly: policedata.nz > Victimisations report > filter by Area Unit & Offence Type
+
+Location,Area_Unit,Period,Total_Crime_Rate_per_1000,Theft_Pct_of_All_Crime,Estimated_Theft_Incidents_Annual,Burglary_Pct,Assault_Pct,Sexual_Offences_Pct,Robbery_Pct,CBD_Businesses,Theft_Per_Business,Regional_Rank,Trend_3mo,Source_URL
+Napier Central,214300,12mo to Oct 2025,3936.11,84.6,~3330,6.3,7.7,0.7,0.7,450,~7.4,1 of 94 (worst),Falling,safesuburbs.co.nz/suburbs/napier-central
+Hastings Central,210500,12mo to Oct 2025,3654.10,~75.0,~2740,~10.0,~12.0,~1.0,~2.0,480,~5.7,2 of 94,Flat,crimestats.co.nz/crime/hawke-s-bay-region/hastings-central
+Havelock North Central,211600,12mo to Oct 2025,53.92,62.2,~34,17.5,12.6,4.9,2.8,350,~0.09,28 of 94,Falling fast (-55.6%),safesuburbs.co.nz/suburbs/havelock-north-central
+Taradale Central,213700,12mo to Oct 2025,33.06,76.1,~28,11.9,11.9,<1,<1,200,~0.14,46 of 94,Decreasing,crimestats.co.nz/crime/hawke-s/taradale-central
+
+# --- METHODOLOGY NOTES ---
+# Estimated_Theft_Incidents_Annual = (Rate/1000) x Meshblock_Resident_Pop x (Theft_Pct/100)
+# Napier Central meshblock resident pop approx 1,000; Hastings Central approx 1,000; Havelock North Central approx 1,100; Taradale Central approx 1,100
+# These are approximations. For exact counts: download raw CSV from policedata.nz Victimisations report
+# Filter: Region=Hawkes Bay, Area Unit=Napier Central/Hastings Central/Havelock North-Central, Offence=Theft
+
+# --- HOW TO GET EXACT RAW DATA ---
+# 1. Go to: https://www.police.govt.nz/about-us/publications-statistics/data-and-statistics/policedatanz
+# 2. Open "Victimisations by location" report (Tableau dashboard)
+# 3. Filter: Eastern District > Hawke's Bay > select area unit
+# 4. Download > Crosstab (CSV)
+# Monthly data available from July 2014 onwards
+
+# --- COMPARISON BENCHMARKS (NZ national) ---
+# NZ National Average Crime Rate,N/A,12mo to Oct 2025,209.4,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,crimestats.co.nz
